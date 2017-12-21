@@ -17,6 +17,7 @@ class createCharacter:
     def determine_name(self):
         # self.name = input("Welcome! State your name:")
         print("The name you've entered is:" + self.name)
+        return self.name
 
     def determine_gender(self):
         # self.gender = input("State your gender! Choose between M or F:")
@@ -27,7 +28,7 @@ class createCharacter:
             else:
                 print("Error with input. Please choose between M or F")
                 self.gender = input("State your gender! Choose between M or F:")
-                #continue
+        return self.gender
 
     def determine_playerClass(self):
         while True:
@@ -55,6 +56,7 @@ class createCharacter:
             else:
                 print("Error with input. Please choose between A, J or F")
                 self.playerClass = input("Choose your player class! Choose between [A]gile boii, [J]umpy boii or [F]asty boii:")
+        return self.playerAgility, self.playerJumpProwess, self.playerSpeed
 
 
     def print_attributes(self):
